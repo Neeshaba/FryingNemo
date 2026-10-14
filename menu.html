@@ -9,8 +9,8 @@
 		<title>Menu</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="main.css" />
+		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -28,26 +28,26 @@
 						<!-- Content -->
 
 							<section id="content" class="main">
-								<span class="image main"><img src="images/Menu Banner-min.png" alt="" /></span>
-								<h2>Browser our menu</h2>
-								<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-								<ul id="myUL">
+								<span class="image main"><img src="Menu Banner-min.png" alt="" /></span>
+								<h2>Browse our menu</h2>
+								<input type="text" id="myInput" onkeyup="myFunction()" aria-label="Search menu categories" placeholder="Search menu categories">
+								<p id="menu-note">Website prototype: menu categories are for demonstration; online ordering is unavailable.</p><ul id="myUL">
 									<li>
-									<a href="nonexistent.html">
-										<img src="images/Fish and chips menu-min.png" alt="Fish and Chips" style="width:100%">
+									<a href="#menu-note">
+										<img src="Fish and chips menu-min.png" alt="Fish and Chips" style="width:100%">
 										Fish and Chips
 									</a>
 									</li>
 									<li>
-									<a href="nonexistent.html">
-										<img src="images/Burger menu-min.PNG" alt="Burger" style="width:100%">
-										Fish and Chips
+									<a href="#menu-note">
+										<img src="Burger menu-min.PNG" alt="Burger" style="width:100%">
+										Burgers
 									</a>
 									</li>
 									<li>
-									<a href="nonexistent.html">
-										<img src="images/Drinks menu-min.PNG" alt="Drinks" style="width:100%">
-										Fish and Chips
+									<a href="#menu-note">
+										<img src="Drinks menu-min.PNG" alt="Drinks" style="width:100%">
+										Drinks
 									</a>
 									</li>
 								</ul>
@@ -90,14 +90,14 @@
 			</div>
 
 			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="jquery.min.js"></script>
+			<script src="jquery.scrollex.min.js"></script>
+			<script src="jquery.scrolly.min.js"></script>
+			<script src="browser.min.js"></script>
+			<script src="breakpoints.min.js"></script>
+			<script src="util.js"></script>
+			<script src="main.js"></script>
 
 
-	</body>
+	<script>function myFunction(){const term=document.getElementById("myInput").value.toLowerCase();document.querySelectorAll("#myUL li").forEach(item=>{item.hidden=!item.textContent.toLowerCase().includes(term);});}</script></body>
 </html>
