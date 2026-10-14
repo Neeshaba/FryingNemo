@@ -30,17 +30,15 @@ HTML, CSS, JavaScript, jQuery, and the Stellar template's scrolling and responsi
 | `main.js`, `util.js`, and supporting JavaScript | Template behaviour and utilities. |
 | `README.txt`, `LICENSE.txt` | Original template credits and licence information. |
 
-## Current implementation status
+## Implementation status
 
-The repository needs asset-path repairs before it can be presented as a working demo. The HTML references `assets/css/`, `assets/js/`, and `images/`, while the inspected repository lists the corresponding files in its root. Some referenced template imagery is also absent.
+The five restaurant pages now reference the assets in the repository root. Missing template imagery was replaced with an existing project image, menu labels were corrected, and menu search filters categories. Menu links no longer point to an absent page.
 
-The menu links target `nonexistent.html`, which is not present. Its search input calls `myFunction()`, but the menu page does not define that function; search behaviour remains unverified. The contact form posts to `#` and has no configured delivery endpoint. Social links are placeholders.
+The contact form is explicitly a demonstration: sending is disabled because no delivery service is configured. Placeholder social links have been removed. No ordering, payment, or message-delivery backend is claimed.
 
-## Preview and next steps
+## Preview
 
-After correcting asset paths and missing references, preview `index.html` using a local static web server. Check each page, navigation link, image, and browser console before deployment. A build process or package installation is not defined in this repository.
-
-The source review does not establish that the layout works across devices; browser verification is still required.
+Open the deployed demo or serve the repository with a local static web server and open `index.html`. There is no package installation or build step.
 
 ## Attribution
 
